@@ -1,3 +1,31 @@
+main {
+  max-width: 840px;
+  margin: 20px;
+}
+
+aside {
+  width: auto;
+  margin: 20px;
+  border-left: 3px dashed red;
+  border-top: 3px dashed blue;
+  border-bottom: 3px dashed blue;
+  border-right: 3px dashed red;
+  padding: 20px;
+  text-align: center;
+  background: rgb(248, 255, 204);
+  background: linear-gradient(
+    0deg,
+    rgba(248, 255, 204, 1) 23%,
+    rgba(255, 222, 11, 0.9738270308123249) 100%
+  );
+  color: black;
+  font-size: 19px;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
 nav {
   background-color: steelblue;
   padding: 10px;
@@ -13,7 +41,7 @@ h1 {
   color: steelblue;
 }
 
-img {
+main img {
   width: 150px;
   height: auto;
   border: 1px solid steelblue;
@@ -22,5 +50,12 @@ img {
 }
 
 p {
-  padding: 10px;
+  padding: 0px;
+}
+
+footer {
+  margin-top: 50px;
+  display: block;
+  border-top: 2px solid #000;
+  text-align: center;
 }
