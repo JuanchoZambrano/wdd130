@@ -20,8 +20,48 @@
   padding: 0;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: rgb(88, 154, 255);
+  background: radial-gradient(
+    circle,
+    rgba(88, 154, 255, 0.5284488795518207) 0%,
+    rgba(0, 255, 237, 0.5284488795518207) 0%
+  );
+}
+
+header img {
+  justify-self: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #84d0ff;
+  color: #000;
+  transform: scale(1.2);
+}
+
 .hero {
   position: relative;
+  margin-top: 5px;
 }
 
 .hero img {
@@ -52,9 +92,10 @@ article {
   position: absolute;
   background-color: rgba(254, 186, 69, 0.431);
   box-shadow: 5px 5px 61px 3px rgb(255, 169, 32);
-  height: auto;
   font-size: 1.2em;
   width: 900px;
+  max-width: fit-content;
+  max-height: fit-content;
   top: 425px;
   left: 200px;
 }
@@ -66,12 +107,76 @@ article img {
   padding: 25px;
 }
 
+.history {
+  border: 2px solid #000;
+  margin-top: 5px;
+}
+
+.history h2 {
+  text-align: center;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  border: 2px solid #000;
+  margin-top: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.images-container h2 {
+  grid-column: 1/6;
+}
+
+.images-container img {
+  width: 160px;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 10px;
+  align-items: center;
+  background: rgb(88, 154, 255);
+  background: radial-gradient(
+    circle,
+    rgba(88, 154, 255, 0.5284488795518207) 0%,
+    rgba(0, 255, 237, 0.5284488795518207) 0%
+  );
+  border: 1px solid #000;
+}
+
+footer p {
+  grid-column: 1/4;
+  text-align: center;
+}
+
+.sociallinks {
+  grid-column: 4/5;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.sociallinks img {
+  padding: 5px;
+  width: 2rem;
+  transition: all 0.3s;
+}
+
+.sociallinks img:hover {
+  transform: scale(1.2);
+}
+
 a {
   text-decoration: none;
 }
 
 p {
-  padding: 20px;
+  padding: 10px;
 }
 
 h2,
