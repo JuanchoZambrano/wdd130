@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+header {
+  margin: 0 auto;
+  width: 650px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: navy;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #eee;
+  display: grid;
+}
+
+label {
+  margin: 15px 0 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+strong {
+  color: navy;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: navy;
+}
+
+button {
+  width: 150px;
+  justify-self: center;
+  margin-top: 35px;
+  color: #333;
+  border-radius: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 5px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: navy;
+  color: #fff;
+  border-color: #fff;
+}
