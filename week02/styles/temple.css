@@ -3,13 +3,13 @@ body {
 }
 
 header {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     text-align: center;
     font-size: 20px;
     max-width: 550px;
     margin: 0 auto;
-    padding: 8px 2px 8px 2px;
+    padding: 8px 2px;
 }
 
 header p {
@@ -26,9 +26,8 @@ img {
     width: 300px;
     height: 250px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 3px 30px -5px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px #333;
 }
 
 h2 {
@@ -41,10 +40,10 @@ section {
     width: 300px;
     height: 145px;
     display: block;
-    margin: 25px auto 25px auto;
+    margin: 20px auto;
     background-color: lightgrey;
     font-size: 11px;
-    border: 0.2px solid whitesmoke;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 
 section p {
@@ -56,13 +55,13 @@ section li {
 }
 
 footer {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     text-align: center;
     font-size: 15px;
     max-width: 550px;
     margin: 0 auto;
-    padding: 8px 2px 8px 2px;
+    padding: 8px 2px;
 }
 
 footer p {
