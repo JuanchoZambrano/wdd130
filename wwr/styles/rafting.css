@@ -161,6 +161,13 @@ footer p {
     margin: 20px 0;
 }
 
+.company-data h1 {
+    background-color: var(--main-color);
+    color: #000;
+    margin-bottom: 10px;
+    position: static;
+}
+
 .company-data h2 {
     background-color: var(--main-color);
     color: #000;
