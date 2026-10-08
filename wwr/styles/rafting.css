@@ -302,26 +302,29 @@ button[type="submit"]:hover {
     font-size: 1.2rem;
     border-bottom: 1px solid var(--accent-color1);
     margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .trips-button {
-    width: 500px;
-    height: 50px;
+    padding: 5px 40px;
+    background-color: var(--accent-color1);
+    color: #fff;
     font-size: 1.5rem;
     border: 2px solid var(--accent-color1);
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 70px;
+    transition: background-color 0.3s ease;
 }
 
-.trips-button a,
-.card a {
+.booking-info a,
+.card a,
+.booking-full-plan a {
     text-decoration: none;
-    color: #000;
 }
 
 .trips-button:hover {
-    background-color: var(--accent-color1);
+    background-color: #1B314B;
     color: #fff;
 }
 
@@ -474,12 +477,15 @@ strong {
     color: var(--accent-color1);
 }
 
-.card .book-button{
-    display: block;
+.card .book-button,
+.booking-full-plan .book-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 40px;
     margin: 20px auto;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border: 2px solid var(--accent-color1);
     border-radius: 5px;
     background-color: var(--accent-color1);
@@ -487,7 +493,7 @@ strong {
 }
 
 .card .book-button:hover,
-.booking-full-plan button:hover {
+.booking-full-plan .book-button:hover {
     background-color: #1B314B;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -553,12 +559,3 @@ strong {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.booking-full-plan button {
-    width: 150px;
-    height: 50px;
-    color: #fff;
-    font-size: 1.3rem;
-    border: 2px solid var(--accent-color1);
-    border-radius: 5px;
-    background-color: var(--accent-color1);
-}
