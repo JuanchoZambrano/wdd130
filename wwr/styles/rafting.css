@@ -426,7 +426,8 @@ button[type="submit"]:hover {
 
 /* Trips Page ----------------------*/
 
-.trips-cards h1 {
+.trips-cards h1,
+.available-trips h2 {
     background-color: transparent;
     color: #1B314B;
     margin-bottom: 20px;
@@ -485,8 +486,79 @@ strong {
     color: #fff;
 }
 
-.card .book-button:hover {
+.card .book-button:hover,
+.booking-full-plan button:hover {
     background-color: #1B314B;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.available-trips {
+    display: grid;
+    grid-template-columns: 1000px 1fr;
+    margin: 30px 0;
+}
+
+.trips-table {
+    border: 4px solid var(--accent-color1);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 2px solid var(--accent-color1);
+    padding: 10px;
+    text-align: center;
+    background-color: #0c4a6e;
+    color: #fff;
+}
+
+.trips-table .head-table th {
+    background-color: #032b43;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.trips-table .foot-table {
+    background-color: #032b43;
+    border-top: 2px solid #38bdf8;
+}
+
+.booking-full-plan {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    height: 97%;
+}
+
+.booking-full-plan h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #0c4a6e;
+    font-size: 2rem;
+}
+
+.booking-full-plan img {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.booking-full-plan button {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 2px solid var(--accent-color1);
+    border-radius: 5px;
+    background-color: var(--accent-color1);
 }
